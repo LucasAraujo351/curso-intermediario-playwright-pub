@@ -1,7 +1,7 @@
 import test, { expect } from "@playwright/test";
 //(.only)=Para executar apenas esse test
 //test.only('Locatizando por data-test', async({ page }) => {
-test.only('Locatizando por data-test', async({ page }) => {
+test('Locatizando por data-test', async({ page }) => {
     await page.goto('https://www.saucedemo.com/');
 // (fill)=metodo para prencher input
     await page.getByTestId('username').fill('matheus');
